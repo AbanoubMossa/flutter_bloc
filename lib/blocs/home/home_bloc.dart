@@ -19,6 +19,12 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
 
   FutureOr<void> _onDecrementEvent(
       DecrementEvent event, Emitter<HomeState> emit) {
-    emit(DecrementState(value: event.value - 1));
+    int value = 0;
+    if (event.value == 0) {
+      value = 0;
+    } else {
+      value = event.value - 1;
+    }
+    emit(DecrementState(value: value));
   }
 }
