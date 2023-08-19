@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:sefen_bloc/blocs/first_screen/first_screen_bloc.dart';
 import 'package:sefen_bloc/blocs/home/home_bloc.dart';
-import 'package:sefen_bloc/screens/home_screen/home_screen.dart';
+import 'package:sefen_bloc/screens/first_screen/first_screen.dart';
 
 void main() {
   runApp(
@@ -9,7 +10,12 @@ void main() {
       debugShowCheckedModeBanner: false,
       home: MultiBlocProvider(
         providers: [
-          BlocProvider<HomeBloc>(create: (context) => HomeBloc(),)
+          BlocProvider<HomeBloc>(
+            create: (context) => HomeBloc(),
+          ),
+          BlocProvider<FirstScreenBloc>(
+            create: (context) => FirstScreenBloc(),
+          )
         ],
         child: const MyApp(),
       ),
@@ -27,6 +33,6 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return const HomeScreen();
+    return const FirstScreen();
   }
 }
