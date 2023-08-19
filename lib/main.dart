@@ -11,7 +11,7 @@ void main() {
         providers: [
           BlocProvider<HomeBloc>(create: (context) => HomeBloc(),)
         ],
-        child: MyApp(),
+        child: const MyApp(),
       ),
     ),
   );

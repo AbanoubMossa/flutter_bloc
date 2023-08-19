@@ -14,3 +14,9 @@ class DecrementState extends HomeState{
   final int value;
   DecrementState({required this.value});
 }
+
+class ShowText extends HomeState{
+  final String test;
+  ShowText({required this.test});
+}
+
