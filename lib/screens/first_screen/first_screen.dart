@@ -20,7 +20,14 @@ class FirstScreen extends StatelessWidget {
         ),
       ),
       body: Center(
-        child: Text(text),
+        child: Text(
+          text,
+          style: const TextStyle(
+            fontSize: 40,
+            color: Colors.black,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
     );
   }

@@ -12,7 +12,14 @@ class SecondScreen extends StatelessWidget {
         title: const Text('Second Screen'),
       ),
       body: Center(
-        child: Text(text),
+        child: Text(
+          text,
+          style: const TextStyle(
+            fontSize: 40,
+            color: Colors.black,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
     );
   }

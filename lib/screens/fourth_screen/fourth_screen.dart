@@ -28,9 +28,9 @@ class FourthScreen extends StatelessWidget {
         child: Text(
           text,
           style: const TextStyle(
-            fontWeight: FontWeight.bold,
+            fontSize: 40,
             color: Colors.black,
-            fontSize: 50,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ),
