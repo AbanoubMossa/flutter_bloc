@@ -1,13 +1,27 @@
-part of 'first_screen_bloc.dart';
+class FirstScreenState {}
 
-abstract class FirstScreenState {}
+class InitialState extends FirstScreenState {}
 
-class FirstScreenInitial extends FirstScreenState {}
+class NavigationToFirstScreensState extends FirstScreenState {
+  final String text;
 
-class NavigationToSocandScreenState extends FirstScreenState {
-  final String textValue;
+  NavigationToFirstScreensState({required this.text});
+}
 
-  NavigationToSocandScreenState({
-    required this.textValue,
-  });
+class NavigationToSecondScreenState extends FirstScreenState {
+  final String text;
+
+  NavigationToSecondScreenState({required this.text});
+}
+
+class NavigationToTherdScreenState extends FirstScreenState {
+  final String text;
+
+  NavigationToTherdScreenState({required this.text});
+}
+
+class NavigationToFourthScreenState extends FirstScreenState {
+  final String text;
+
+  NavigationToFourthScreenState({required this.text});
 }
